@@ -27,35 +27,45 @@ export default function TabLayout() {
         name="news"
         options={{
           title: 'News',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="newspaper-o" color={color} />
+          ),
         }}
       />
       <Tabs.Screen
         name="notifications"
         options={{
           title: 'Notifications',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="exclamation-circle" color={color} />
+          ),
         }}
       />
       <Tabs.Screen
         name="calendar"
         options={{
           title: 'Calendar',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="calendar" color={color} />
+          ),
         }}
       />
       <Tabs.Screen
         name="lunch"
         options={{
           title: 'Lunch',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="clipboard" color={color} />
+          ),
         }}
       />
       <Tabs.Screen
         name="classmates"
         options={{
           title: 'Classmates',
-          tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
+          tabBarIcon: ({ color }) => (
+            <TabBarIcon name="user-circle" color={color} />
+          ),
         }}
       />
     </Tabs>
