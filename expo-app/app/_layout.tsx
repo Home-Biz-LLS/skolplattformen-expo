@@ -25,7 +25,7 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   const [loaded, error] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
+    Poppins: require('../assets/fonts/Poppins-Regular.ttf'),
     ...FontAwesome.font,
   });
 
@@ -75,6 +75,7 @@ function RootLayoutNav() {
         <Stack.Screen
           name="profile"
           options={{
+            title: 'Your Children',
             headerLeft: () => (
               <Link href="/modal" asChild>
                 <Pressable>
