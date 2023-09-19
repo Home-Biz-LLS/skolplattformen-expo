@@ -9,6 +9,9 @@ const profile = () => {
         <Text style={styles.title}>
           This is the screen where you can see your children
         </Text>
+        <Link href="/(tabs)/news">
+          <Text style={styles.linkText}>Child 1</Text>
+        </Link>
       </View>
     </>
   );

@@ -28,20 +28,6 @@ export default function TabLayout() {
         options={{
           title: 'News',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-          headerLeft: () => (
-            <Link href="/modal" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <FontAwesome
-                    name="gear"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginLeft: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-            </Link>
-          ),
         }}
       />
       <Tabs.Screen
@@ -49,20 +35,6 @@ export default function TabLayout() {
         options={{
           title: 'Notifications',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-          headerLeft: () => (
-            <Link href="/modal" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <FontAwesome
-                    name="gear"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginLeft: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-            </Link>
-          ),
         }}
       />
       <Tabs.Screen
@@ -70,20 +42,6 @@ export default function TabLayout() {
         options={{
           title: 'Calendar',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-          headerLeft: () => (
-            <Link href="/modal" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <FontAwesome
-                    name="gear"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginLeft: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-            </Link>
-          ),
         }}
       />
       <Tabs.Screen
@@ -91,20 +49,6 @@ export default function TabLayout() {
         options={{
           title: 'Lunch',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-          headerLeft: () => (
-            <Link href="/modal" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <FontAwesome
-                    name="gear"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginLeft: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-            </Link>
-          ),
         }}
       />
       <Tabs.Screen
@@ -112,20 +56,6 @@ export default function TabLayout() {
         options={{
           title: 'Classmates',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
-          headerLeft: () => (
-            <Link href="/modal" asChild>
-              <Pressable>
-                {({ pressed }) => (
-                  <FontAwesome
-                    name="gear"
-                    size={25}
-                    color={Colors[colorScheme ?? 'light'].text}
-                    style={{ marginLeft: 15, opacity: pressed ? 0.5 : 1 }}
-                  />
-                )}
-              </Pressable>
-            </Link>
-          ),
         }}
       />
     </Tabs>
