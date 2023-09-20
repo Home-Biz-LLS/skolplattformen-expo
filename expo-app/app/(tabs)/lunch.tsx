@@ -1,18 +1,40 @@
 import { StyleSheet } from 'react-native';
 
-import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
+
+const lunchMenu = [
+  {
+    title: 'Måndag',
+    description: 'Kebabgryta ris Ratatouille med kikärter',
+  },
+  {
+    title: 'Tisdag',
+    description: 'Ost-broccolisås pasta Fusilli',
+  },
+  {
+    title: 'Onsdag',
+    description: 'Köttbullar potatis gräddsås lingon Falafel',
+  },
+  {
+    title: 'Torsdag',
+    description: 'Prinskorv potatis rödbetssallad + Inlagd och senapssill',
+  },
+  {
+    title: 'Fredag',
+    description:
+      'Avslutning  Varmkorv bröd ketchup senap ( F-3 i matsalen från 10:30 )',
+  },
+];
 
 export default function TabFourScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab Test</Text>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
-      <EditScreenInfo path="app/(tabs)/lunch.tsx" />
+      {lunchMenu.map((item, index) => (
+        <View key={index}>
+          <Text>{item.title}</Text>
+          <Text>{item.description}</Text>
+        </View>
+      ))}
     </View>
   );
 }
@@ -20,7 +42,7 @@ export default function TabFourScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
+    // alignItems: 'center',
     justifyContent: 'center',
   },
   title: {
