@@ -1,18 +1,18 @@
 import { StyleSheet } from 'react-native';
 
-import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
+
+import NewsListItem from '../../components/news/NewsListItem';
+
+import { news } from '../../fakeData/news';
 
 export default function TabOneScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>News</Text>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
-      <EditScreenInfo path="app/(tabs)/news.tsx" />
+      <Text>Search bar goes here</Text>
+      {news.map(article => (
+        <NewsListItem article={article} key={article.id} />
+      ))}
     </View>
   );
 }
@@ -20,8 +20,8 @@ export default function TabOneScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
+    // alignItems: 'center',
+    // justifyContent: 'center',
   },
   title: {
     fontSize: 20,
