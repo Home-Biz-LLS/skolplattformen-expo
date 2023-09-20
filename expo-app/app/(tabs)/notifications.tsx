@@ -1,18 +1,42 @@
 import { StyleSheet } from 'react-native';
-
-import EditScreenInfo from '../../components/EditScreenInfo';
+import { Link } from 'expo-router';
 import { Text, View } from '../../components/Themed';
 
 export default function TabTwoScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Tab Two - why wont you work</Text>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
-      <EditScreenInfo path="app/(tabs)/notifications.tsx" />
+      <Link href="https://www.breakit.se/artikel/21423/har-ar-it-bolaget-bakom-haveriet-pa-skolplattformen">
+        <View>
+          <Text>Heading</Text>
+          <Text>possible comment (lärlogg/bedömning/empty)</Text>
+          <Text>published</Text>
+          <Text>sub heading</Text>
+        </View>
+      </Link>
+      <Link href="/">
+        <View>
+          <Text>Heading</Text>
+          <Text>possible comment (lärlogg/bedömning/empty)</Text>
+          <Text>published</Text>
+          <Text>sub heading</Text>
+        </View>
+      </Link>
+      <Link href="/">
+        <View>
+          <Text>Heading</Text>
+          <Text>possible comment (lärlogg/bedömning/empty)</Text>
+          <Text>published</Text>
+          <Text>sub heading</Text>
+        </View>
+      </Link>
+      <Link href="/">
+        <View>
+          <Text>Heading</Text>
+          <Text>possible comment (lärlogg/bedömning/empty)</Text>
+          <Text>published</Text>
+          <Text>sub heading</Text>
+        </View>
+      </Link>
     </View>
   );
 }
