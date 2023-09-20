@@ -7,10 +7,10 @@ export default function TabTwoScreen() {
     <View style={styles.container}>
       <Link href="https://www.breakit.se/artikel/21423/har-ar-it-bolaget-bakom-haveriet-pa-skolplattformen">
         <View>
-          <Text>Heading</Text>
-          <Text>possible comment (lärlogg/bedömning/empty)</Text>
-          <Text>published</Text>
-          <Text>sub heading</Text>
+          <Text>Planering och Bedömning</Text>
+          <Text>Lärlogg</Text>
+          <Text>4 days ago</Text>
+          <Text>Ett nytt inlägg i en lärlogg har skapats.</Text>
         </View>
       </Link>
       <Link href="/">

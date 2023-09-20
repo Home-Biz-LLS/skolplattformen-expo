@@ -1,19 +1,67 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet, ScrollView } from 'react-native';
 
-import EditScreenInfo from '../../components/EditScreenInfo';
 import { Text, View } from '../../components/Themed';
 
 export default function TabFiveScreen() {
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Tab Test</Text>
-      <View
-        style={styles.separator}
-        lightColor="#eee"
-        darkColor="rgba(255,255,255,0.1)"
-      />
-      <EditScreenInfo path="shrek" />
-    </View>
+    <ScrollView>
+      <View style={styles.container}>
+        <Text>Class goes here (2B)</Text>
+        <View
+          style={styles.separator}
+          lightColor="#eee"
+          darkColor="rgba(255,255,255,0.1)"
+        />
+        <View style={styles.outline}>
+          <Text>Avatar</Text>
+          <Text>name</Text>
+          <Text>Parents</Text>
+          <Text>3 dots</Text>
+        </View>
+        <View style={styles.outline}>
+          <Text>Avatar</Text>
+          <Text>name</Text>
+          <Text>Parents</Text>
+          <Text>3 dots</Text>
+        </View>
+        <View style={styles.outline}>
+          <Text>Avatar</Text>
+          <Text>name</Text>
+          <Text>Parents</Text>
+          <Text>3 dots</Text>
+        </View>
+        <View style={styles.outline}>
+          <Text>Avatar</Text>
+          <Text>name</Text>
+          <Text>Parents</Text>
+          <Text>3 dots</Text>
+        </View>
+        <View style={styles.outline}>
+          <Text>Avatar</Text>
+          <Text>name</Text>
+          <Text>Parents</Text>
+          <Text>3 dots</Text>
+        </View>
+        <View style={styles.outline}>
+          <Text>Avatar</Text>
+          <Text>name</Text>
+          <Text>Parents</Text>
+          <Text>3 dots</Text>
+        </View>
+        <View style={styles.outline}>
+          <Text>Avatar</Text>
+          <Text>name</Text>
+          <Text>Parents</Text>
+          <Text>3 dots</Text>
+        </View>
+        <View style={styles.outline}>
+          <Text>Avatar</Text>
+          <Text>name</Text>
+          <Text>Parents</Text>
+          <Text>3 dots</Text>
+        </View>
+      </View>
+    </ScrollView>
   );
 }
 
@@ -22,6 +70,11 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
+  },
+  outline: {
+    borderWidth: 1,
+    borderColor: 'red',
+    padding: 10,
   },
   title: {
     fontSize: 20,
