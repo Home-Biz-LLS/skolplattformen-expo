@@ -6,11 +6,20 @@ const profile = () => {
   return (
     <>
       <View style={styles.container}>
-        <Text style={styles.title}>
-          This is the screen where you can see your children
-        </Text>
         <Link href="/(tabs)/NewsList">
-          <Text style={styles.linkText}>Child 1</Text>
+          <View style={styles.outline}>
+            <Text>Avatar</Text>
+            <Text>Name</Text>
+            <Text>Class</Text>
+            <Text>School</Text>
+            <Text>Arrow icon</Text>
+            <Text>Start - end time</Text>
+            <Text>Upcoming events</Text>
+            <Text>News</Text>
+            <Text>Todays Lunch</Text>
+            <Text>! icon</Text>
+            <Text>Report absence</Text>
+          </View>
         </Link>
       </View>
     </>
@@ -25,6 +34,11 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     padding: 20,
+  },
+  outline: {
+    borderWidth: 1,
+    borderColor: 'red',
+    padding: 10,
   },
   title: {
     fontSize: 20,
