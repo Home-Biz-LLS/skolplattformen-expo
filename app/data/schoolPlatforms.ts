@@ -1,10 +1,10 @@
-import CookieManager from '@react-native-cookies/cookies';
-// import initHjarntorget, {
-//   features as featuresHjarntorget,
-// } from '@skolplattformen/api-hjarntorget'
+import CookieManager from '@react-native-community/cookies';
+import initHjarntorget, {
+  features as featuresHjarntorget,
+} from '@skolplattformen/api-hjarntorget';
 import initSkolplattformen, {
   features as featuresSkolPlattformen,
-} from '@skolplattformen/api-skolplattformen';
+} from '../libs/api-skolplattformen/lib';
 
 export const schoolPlatforms = [
   {
@@ -13,10 +13,10 @@ export const schoolPlatforms = [
     api: initSkolplattformen(fetch as any, CookieManager),
     features: featuresSkolPlattformen,
   },
-  // {
-  //   id: 'goteborg-hjarntorget',
-  //   displayName: 'Göteborgs Stad (Hjärntorget)',
-  //   api: initHjarntorget(fetch as any, CookieManager),
-  //   features: featuresHjarntorget,
-  // },
+  {
+    id: 'goteborg-hjarntorget',
+    displayName: 'Göteborgs Stad (Hjärntorget)',
+    api: initHjarntorget(fetch as any, CookieManager),
+    features: featuresHjarntorget,
+  },
 ];

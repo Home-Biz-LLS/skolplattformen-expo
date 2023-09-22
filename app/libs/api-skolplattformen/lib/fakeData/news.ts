@@ -1,10 +1,10 @@
-import { children } from './children'
-import { Child, NewsItem } from '@skolplattformen/api'
-import * as dates from './dates'
+import { children } from './children';
+import { Child, NewsItem } from '../../../api/lib';
+import * as dates from './dates';
 
-export const news = (child: Child): NewsItem[] => newsData.get(child.id) ?? []
+export const news = (child: Child): NewsItem[] => newsData.get(child.id) ?? [];
 
-const [child1, child2] = children()
+const [child1, child2] = children();
 
 const newsData = new Map<string, NewsItem[]>([
   [
@@ -135,4 +135,4 @@ const newsData = new Map<string, NewsItem[]>([
       },
     ],
   ],
-])
+]);

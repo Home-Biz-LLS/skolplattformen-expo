@@ -25,8 +25,8 @@ import {
   User,
   wrap,
   FrejaLoginStatusChecker,
-} from '@skolplattformen/api';
-import { Language } from '@skolplattformen/curriculum';
+} from '../../api/lib';
+import { Language } from '../../curriculum/src';
 import { EventEmitter } from 'events';
 import { decode } from 'he';
 import { DateTime } from 'luxon';
@@ -450,7 +450,7 @@ export class ApiSkolplattformen extends EventEmitter implements Api {
         },
       );
     }
-    const url = routes.newsDetails(child.id, item.id);
+    const url = routes.newsDetails(child.id, item.id) as string;
     const session = this.getRequestInit();
     const response = await this.fetch(
       `news_${item.id}`,

@@ -1,4 +1,4 @@
-import { Language } from '@skolplattformen/curriculum';
+import { Language } from '../../curriculum/src';
 import { EventEmitter } from 'events';
 import { DateTime } from 'luxon';
 import { LoginStatusChecker, FrejaLoginStatusChecker } from './loginStatus';

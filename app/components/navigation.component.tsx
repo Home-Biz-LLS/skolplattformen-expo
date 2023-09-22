@@ -1,10 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import {
-  Child as ChildType,
-  NewsItem as NewsItemType,
-} from '@skolplattformen/api';
-import { useApi } from '@skolplattformen/hooks';
+import { Child as ChildType, NewsItem as NewsItemType } from '../libs/api/lib/';
+import { useApi } from '../libs/hooks/src/';
 import { useTheme } from '@ui-kitten/components';
 // License info to be added later
 // import { Library } from 'libraries.json';
@@ -123,16 +120,16 @@ export const AppNavigator = () => {
                 : colors['background-basic-color-1'],
           },
           headerLargeStyle: {
-            backgroundColor: colors['background-basic-color-2'],
+            backgroundColor: 'blue',
           },
           headerLargeTitleStyle: {
             fontFamily: 'Poppins-ExtraBold',
           },
         })}
       >
-        {isLoggedIn ? (
-          <>
-            {/* <Screen
+        {/* {isLoggedIn ? (
+          <> */}
+        {/* <Screen
               name="Children"
               component={Children}
               options={childenRouteOptions(colorScheme === 'dark')}
@@ -152,10 +149,10 @@ export const AppNavigator = () => {
               component={Absence}
               options={absenceRouteOptions(colorScheme === 'dark')}
         /> */}
-          </>
-        ) : (
-          <Screen name="Login" component={Auth} options={authRouteOptions} />
-        )}
+        {/* </> */}
+        {/* // ) : ( */}
+        <Screen name="Login" component={Auth} options={authRouteOptions} />
+        {/* // )} */}
         {/* <Screen
           name="SetLanguage"
           component={SetLanguage}

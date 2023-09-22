@@ -1,6 +1,6 @@
 import { EventEmitter } from 'events';
 import { loginStatus } from './routes';
-import { Fetcher, AuthTicket } from '@skolplattformen/api';
+import { Fetcher, AuthTicket } from '../../api/lib';
 
 /*
 export enum LoginEvent {

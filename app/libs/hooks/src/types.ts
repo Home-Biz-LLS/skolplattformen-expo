@@ -12,7 +12,7 @@ import {
   Teacher,
   TimetableEntry,
   User,
-} from '@skolplattformen/api';
+} from '../../api/lib';
 import { Action, Reducer } from 'redux';
 
 export interface Reporter {

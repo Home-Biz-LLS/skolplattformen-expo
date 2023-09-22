@@ -1,4 +1,4 @@
-import { Features, FeatureType } from '@skolplattformen/api';
+import { Features, FeatureType } from '../../libs/api/lib';
 import React from 'react';
 
 export const FeatureFlagsContext = React.createContext<Features>({

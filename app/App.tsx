@@ -1,6 +1,6 @@
 import * as eva from '@eva-design/eva';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { ApiProvider, Reporter } from '@skolplattformen/hooks';
+import { ApiProvider, Reporter } from './libs/hooks/src';
 import { ApplicationProvider, IconRegistry, Text } from '@ui-kitten/components';
 import { EvaIconsPack } from '@ui-kitten/eva-icons';
 import React from 'react';
@@ -57,7 +57,7 @@ const logAsyncStorage = async () => {
   console.log('***');
 };
 
-export default () => {
+export default function App() {
   const [usingSystemTheme] = useSettingsStorage('usingSystemTheme');
   const [currentSchoolPlatform] = useSettingsStorage('currentSchoolPlatform');
   const [theme] = useSettingsStorage('theme');
@@ -105,4 +105,25 @@ export default () => {
       </SchoolPlatformProvider>
     </FeatureProvider>
   );
-};
+}
+
+// import { StatusBar } from 'expo-status-bar';
+// import { StyleSheet, Text, View } from 'react-native';
+
+// export default () => {
+//   return (
+//     <View style={styles.container}>
+//       <Text>We are the best</Text>
+//       <StatusBar style="auto" />
+//     </View>
+//   );
+// };
+
+// const styles = StyleSheet.create({
+//   container: {
+//     flex: 1,
+//     backgroundColor: '#fff',
+//     alignItems: 'center',
+//     justifyContent: 'center',
+//   },
+// });

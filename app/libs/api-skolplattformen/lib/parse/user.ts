@@ -1,4 +1,4 @@
-import { User } from '@skolplattformen/api'
+import { User } from '../../../api/lib';
 
 export const user = ({
   socialSecurityNumber,
@@ -14,4 +14,4 @@ export const user = ({
   email: userEmail,
   isAuthenticated,
   notificationId,
-})
+});
