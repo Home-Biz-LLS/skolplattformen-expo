@@ -1,17 +1,6 @@
 {
   "extends": "expo/tsconfig.base",
   "compilerOptions": {
-    "baseUrl": ".",
-    "rootDir": ".",
-    "strict": true,
-    "paths": {
-      "@skolplattformen/api": ["libs/api/lib/index.ts"],
-      "@skolplattformen/api-hjarntorget": ["libs/api-hjarntorget/lib/index.ts"],
-      "@skolplattformen/api-skolplattformen": [
-        "libs/api-skolplattformen/lib/index.ts"
-      ],
-      "@skolplattformen/curriculum": ["libs/curriculum/src/index.ts"],
-      "@skolplattformen/hooks": ["libs/hooks/src"]
-    }
+    "strict": true
   }
 }
